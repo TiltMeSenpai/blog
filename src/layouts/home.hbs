@@ -1,0 +1,8 @@
+{{>header}}
+<div class="content">
+    {{#each collections.all as |post|}}
+        {{>summary article=post}}
+    {{/each}}
+</div>
+
+{{>footer}}

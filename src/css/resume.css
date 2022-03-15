@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Public Sans";
+  src: local("Public Sans");
+  src: url("../static/PublicSans.eot") format("eot");
+  src: url("../static/PublicSans.woff") format("woff");
+  src: url("../static/PublicSans.woff2") format("woff2");
+  src: url("../static/PublicSans.ttf") format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("../static/PublicSans-Light.eot") format("eot");
+  src: url("../static/PublicSans-Light.woff") format("woff");
+  src: url("../static/PublicSans-Light.woff2") format("woff2");
+  src: url("../static/PublicSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: optional;
+}
+html {
+  font-family: "Public Sans";
+  font-size: 9pt;
+  width: 80%;
+  padding: 2rem;
+  margin: auto;
+}
+@media screen {
+  html {
+    margin-top: 2.75em;
+  }
+}
+@media print {
+  html .no-print {
+    display: none;
+  }
+  @page {
+    html {
+      size: letter portrait;
+      margin: 0;
+    }
+  }
+}
+html body {
+  padding: 0;
+}
+html a:link, html a:visited {
+  text-decoration: none;
+  color: black;
+}
+html a[href*="//"]:after {
+  content: " (" attr(href) ") ";
+}
+html h1 {
+  font-size: 24pt;
+  margin-bottom: 0;
+}
+html h2 {
+  font-size: 11pt;
+  margin-bottom: 0;
+}
+html h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+html .header {
+  margin: auto;
+  text-align: center;
+}
+html .contents h1 {
+  font-size: 14pt;
+  border-bottom: solid 0.1em #999999;
+}
+html .contents p {
+  margin-bottom: 0;
+}
+html .contents p + ul {
+  margin-top: 0;
+}
+html .footer {
+  background: white;
+  border-bottom: solid 0.1em #999999;
+  border-left: solid 0.1em #999999;
+  border-right: solid 0.1em #999999;
+  font-size: 1.25;
+  padding: 1.5em;
+  position: fixed;
+  right: 5vw;
+  left: 5vw;
+  top: 0;
+  height: 1.5em;
+  width: 90vw;
+}
+html .footer a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+html .footer a:before {
+  content: "\f0c1";
+  padding-right: 0.1rem;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+}
+html .footer .align-right {
+  text-align: right;
+  float: right;
+}
+html .footer .home a:before {
+  content: "";
+}
+
+/*# sourceMappingURL=resume.css.map */

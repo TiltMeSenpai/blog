@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch src/scss:src/css & eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiltMeSenpai/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TiltMeSenpai/blog/issues"
+  },
+  "homepage": "https://github.com/TiltMeSenpai/blog#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
