@@ -1,0 +1,86 @@
+@font-face
+    font-family: "Public Sans"
+    src: local('Public Sans')
+    src: url("../static/PublicSans.eot") format("eot")
+    src: url("../static/PublicSans.woff") format("woff")
+    src: url("../static/PublicSans.woff2") format("woff2")
+    src: url("../static/PublicSans.ttf") format("truetype")
+    font-display: fallback
+
+@font-face
+    font-family: "Public Sans"
+    src: url("../static/PublicSans-Light.eot") format("eot")
+    src: url("../static/PublicSans-Light.woff") format("woff")
+    src: url("../static/PublicSans-Light.woff2") format("woff2")
+    src: url("../static/PublicSans-Light.ttf") format("truetype")
+    font-weight: 300
+    font-display: optional
+
+
+html
+    @media screen
+        margin-top: 2.75em
+    @media print
+        .no-print
+            display: none
+        @page
+            size: letter portrait
+            margin: 0
+    font-family: "Public Sans"
+    font-size: 9pt
+    width: 80%
+    padding: 2rem
+    margin: auto
+    body
+        padding: 0
+    a:link, a:visited
+        text-decoration: none
+        color: black
+    a[href*='//']:after
+        content: " (" attr(href) ") "
+    h1
+        font-size: 24pt
+        margin-bottom: 0
+    h2
+        font-size: 11pt
+        margin-bottom: 0
+    h4 
+        margin-top: 0
+        margin-bottom: 1rem
+    .header
+        margin: auto
+        text-align: center
+    .contents
+        h1
+            font-size: 14pt
+            border-bottom: solid .1em lighten(black, 60%)
+        p 
+            margin-bottom: 0
+        p + ul
+            margin-top: 0
+    .footer
+        background: white
+        border-bottom: solid .1em lighten(black, 60%)
+        border-left: solid .1em lighten(black, 60%)
+        border-right: solid .1em lighten(black, 60%)
+        font-size: 1.25
+        padding: 1.5em
+        position: fixed
+        right: 5vw
+        left: 5vw
+        top: 0
+        height: 1.5em
+        width: 90vw
+        a
+            font-weight: bold
+            text-decoration: underline
+        a:before
+            content: "\f0c1"
+            padding-right: .1rem
+            font-weight: 900
+            font-family: "Font Awesome 5 Free"
+        .align-right
+            text-align: right
+            float: right
+        .home a:before
+            content: ""
