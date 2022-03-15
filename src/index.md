@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: index.hbs
-permalink: false
+layout: home.hbs
+eleventyExcludeFromCollections: true
 ---
 # Hello world!
