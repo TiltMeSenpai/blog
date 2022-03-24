@@ -42,10 +42,13 @@ body img {
 body table {
   width: 100%;
 }
-body code {
+body code:not(pre) {
+  color: #DD4A68;
+}
+body pre code {
+  display: block;
   border: solid 0.1em #bfbfbf;
   background-color: #fcfcfc;
-  display: block;
   padding: 0.25rem;
 }
 body a:before {

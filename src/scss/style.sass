@@ -37,10 +37,12 @@ body
     max-width: 100%
   table
     width: 100%
-  code
+  code:not(pre)
+    color: #DD4A68
+  pre code
+    display: block
     border: solid .1em lighten(black, 75%)
     background-color: lighten(black, 99%)
-    display: block
     padding: .25rem
   a:before
     content: "\f0c1"
