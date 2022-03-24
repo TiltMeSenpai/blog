@@ -5,8 +5,17 @@ eleventyExcludeFromCollections: true
 ---
 
 # Experience
+## Security Consultant, Deja vu Security
+#### September 2022 - Present
+Conducted security assessments of products for major tech companies, conducted internal
+research and lead development of internal hardware training processes and standards.
+Focuses in:
+- Embedded Hardware Security
+- Web Application Security
+- Secure Design and Architecture Review
+
 ## Security Engineer, AWS Lambda
-#### July 2020 - Present
+#### July 2020 - September 2021
 Contributed security domain expertise, drafted security-related customer messaging
 and managed organization-wide security campaigns.
 
