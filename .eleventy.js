@@ -8,6 +8,10 @@ module.exports = function(eleventyConfig) {
         "well_known": ".well-known"
     });
 
+    eleventyConfig.addHandlebarsHelper("dateFormat", function (date) {
+        return date.toDateString()
+    })
+
     eleventyConfig.addPlugin(syntaxHighlight);
 
     return {
