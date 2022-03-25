@@ -40,13 +40,6 @@ Focuses in:
 - Single Page Web Application Security
 - REST API Security
 
-## Intern, Cigital
-#### Summer, 2014
-Assisted in security assessments and developed internal tooling.  
-Focuses in:
-- Web application test automation
-- Mobile Security (Android/iOS)
-
 # Skills
 - Embedded Security Assessment
     - Bus protocol analysis (I2C, SPI, LPC, etc)
