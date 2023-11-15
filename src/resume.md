@@ -6,9 +6,11 @@ eleventyExcludeFromCollections: true
 
 # Experience
 ## Security Consultant, Deja vu Security
-#### September 2022 - Present
+#### September 2021 - Present
 Conducted security assessments of products for major tech companies, conducted internal
-research and lead development of internal hardware training processes and standards.
+research and lead development of internal hardware training processes and standards.  
+Defined technical delivery standards, managed resource skill planning, scoped, scheduled
+and provided oversight as the primary technical lead on a high-complexity workstream.  
 Focuses in:
 - Embedded Hardware Security
 - Web Application Security
