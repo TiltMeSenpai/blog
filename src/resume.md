@@ -39,7 +39,6 @@ Focuses in:
 #### 2017-2018
 Conducted security assessments of products for major tech companies.  
 Focuses in:
-- Single Page Web Application Security
 - REST API Security
 
 # Skills
