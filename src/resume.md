@@ -51,7 +51,6 @@ Focuses in:
         - Intel SGX
 - Mobile Security Assessment
     - Dynamic analysis (Frida)
-        - iOS
         - Android
     - Disassembly/Reverse Engineering
         - Android
