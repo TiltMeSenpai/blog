@@ -20,6 +20,7 @@ module.exports = function(eleventyConfig) {
             output: "dist",
             includes: "layouts",
             data: "data"
-        }
+        },
+        htmlTemplateEngine: "hbs"
     }
 }

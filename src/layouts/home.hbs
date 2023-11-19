@@ -1,8 +1,10 @@
-{{>header}}
+{{#> frame}}
+
 <div class="content">
     {{#each collections.all as |post|}}
-        {{>summary article=post}}
+        {{#> summary article=post}}
+        {{/ summary}}
     {{/each}}
 </div>
 
-{{>footer}}
+{{/ frame}}
