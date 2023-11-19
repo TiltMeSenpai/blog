@@ -1,10 +1,23 @@
-{{#> frame}}
+---
+layout: frame.hbs
+---
 
 <div class="content">
-    {{#each collections.all as |post|}}
-        {{#> summary article=post}}
-        {{/ summary}}
+    {{#each collections.post as | post |}}
+    <div class="section">
+        <a href="{{post.url}}" class="title">
+            <h1>
+                {{post.data.title}}
+            </h1>
+        </a>
+        <p>
+            <i>
+                {{ dateFormat post.date }}
+            </i>
+        </p>
+        <p>
+            {{post.data.summary}}
+        </p>
+    </div>
     {{/each}}
 </div>
-
-{{/ frame}}

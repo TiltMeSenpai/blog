@@ -1,7 +1,9 @@
 ---
 title: Wtf IP?
 layout: post.hbs
-tags: lab-note
+tags: 
+    - lab-note
+    - post
 date: 2022-03-24
 summary: |
     Cursed bits of IPv4 knowledge that you probably didn't ask for
