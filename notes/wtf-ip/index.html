@@ -26,44 +26,46 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/resume/">Resume</a></li>
             </ul>
-        </nav>    <div class="content">
-        <div class="title-header">Wtf IP?</div>
-        <p><em>Some notes:</em> These were tested on Linux using <code>ping.</code> They may not apply to other operating systems.
-If I <em>know</em> something is a Linux-specific quirk, I'll note that. Other tools may also have specific
-restrictions on IPv4 formats, in particular, Rust tends to be pretty picky.</p>
-<h2>Localhost has an Entire /8 Block</h2>
-<p>As listed in RFC 6890, Section 2.2.2 Table 4, the entire 127.0.0.0/8 block is assigned to &quot;Loopback&quot;.
-This means that <em>all</em> IP's between 127.0.0.1 and 127.255.255.254 are routed back to the local host.</p>
-<p><em>Side note:</em> 127.255.255.255 is a broadcast address, but where does that go?</p>
-<h2>Address Segments don't Have to be Decimal</h2>
-<p>Most of the time, IPv4 addresses are written as 4 decimal segments between 0 and 255. However,
-segments don't have to be written in decimal. Here are some other addresses that resolve to 127.0.0.1:</p>
-<ul>
-<li>0x7f.0.0.1</li>
-<li>0177.0.0.1</li>
-</ul>
-<h2>IPv4 Addresses don't need 4 Segments</h2>
-<p>Most of the time, IPv4 addresses don't need <em>4</em> segments, Linux appears to begin filling an IP address
-from the high-order bytes, then assumes the last segment fills from the lowest-order byte. Here's more
-ways to write 127.0.0.1</p>
-<ul>
-<li>127.1</li>
-<li>127.0.1</li>
-</ul>
-<h2>IPv4 Segments don't need to be &lt; 255</h2>
-<p>Internally, the Linux kernel actually defines <code>in_addr_t</code> as <code>uint32_t</code>
-(<a href="https://elixir.bootlin.com/uclibc-ng/latest/source/include/netinet/in.h#L142">reference</a>). Effectively,
-this means that Linux will accept any number of 32 bit representations as an IPv4 address. Yet more ways
-to write 127.0.0.1:</p>
-<ul>
-<li>0x7f000001</li>
-<li>2130706433</li>
-<li>017700000001</li>
-</ul>
-<h2>0?</h2>
-<p>Linux also appears to interpret &quot;0&quot; as 127.0.0.1 for some reason? This one seems like a linux-specific behavior,
-neither Windows or MacOS replicate this.</p>
+        </nav>
+            <div class="content">
+                <div class="title-header">Wtf IP?</div>
+                <p><em>Some notes:</em> These were tested on Linux using <code>ping.</code> They may not apply to other operating systems.
+        If I <em>know</em> something is a Linux-specific quirk, I'll note that. Other tools may also have specific
+        restrictions on IPv4 formats, in particular, Rust tends to be pretty picky.</p>
+        <h2>Localhost has an Entire /8 Block</h2>
+        <p>As listed in RFC 6890, Section 2.2.2 Table 4, the entire 127.0.0.0/8 block is assigned to &quot;Loopback&quot;.
+        This means that <em>all</em> IP's between 127.0.0.1 and 127.255.255.254 are routed back to the local host.</p>
+        <p><em>Side note:</em> 127.255.255.255 is a broadcast address, but where does that go?</p>
+        <h2>Address Segments don't Have to be Decimal</h2>
+        <p>Most of the time, IPv4 addresses are written as 4 decimal segments between 0 and 255. However,
+        segments don't have to be written in decimal. Here are some other addresses that resolve to 127.0.0.1:</p>
+        <ul>
+        <li>0x7f.0.0.1</li>
+        <li>0177.0.0.1</li>
+        </ul>
+        <h2>IPv4 Addresses don't need 4 Segments</h2>
+        <p>Most of the time, IPv4 addresses don't need <em>4</em> segments, Linux appears to begin filling an IP address
+        from the high-order bytes, then assumes the last segment fills from the lowest-order byte. Here's more
+        ways to write 127.0.0.1</p>
+        <ul>
+        <li>127.1</li>
+        <li>127.0.1</li>
+        </ul>
+        <h2>IPv4 Segments don't need to be &lt; 255</h2>
+        <p>Internally, the Linux kernel actually defines <code>in_addr_t</code> as <code>uint32_t</code>
+        (<a href="https://elixir.bootlin.com/uclibc-ng/latest/source/include/netinet/in.h#L142">reference</a>). Effectively,
+        this means that Linux will accept any number of 32 bit representations as an IPv4 address. Yet more ways
+        to write 127.0.0.1:</p>
+        <ul>
+        <li>0x7f000001</li>
+        <li>2130706433</li>
+        <li>017700000001</li>
+        </ul>
+        <h2>0?</h2>
+        <p>Linux also appears to interpret &quot;0&quot; as 127.0.0.1 for some reason? This one seems like a linux-specific behavior,
+        neither Windows or MacOS replicate this.</p>
+        
+            </div>
 
-    </div>
-</body>
+    </body>
 </html>
