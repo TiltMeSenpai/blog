@@ -5,7 +5,7 @@
   src: url("../static/PublicSans.woff") format("woff");
   src: url("../static/PublicSans.woff2") format("woff2");
   src: url("../static/PublicSans.ttf") format("truetype");
-  font-display: fallback;
+  font-display: swap;
 }
 @font-face {
   font-family: "Public Sans";
@@ -14,7 +14,7 @@
   src: url("../static/PublicSans-Light.woff2") format("woff2");
   src: url("../static/PublicSans-Light.ttf") format("truetype");
   font-weight: 300;
-  font-display: optional;
+  font-display: swap;
 }
 html {
   min-height: 100%;
